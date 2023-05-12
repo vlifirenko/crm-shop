@@ -1,0 +1,14 @@
+C:\V\CS\crm\CrmModelShop\CrmBl\bin\Debug\net6.0\CrmBl.deps.json
+C:\V\CS\crm\CrmModelShop\CrmBl\bin\Debug\net6.0\CrmBl.runtimeconfig.json
+C:\V\CS\crm\CrmModelShop\CrmBl\bin\Debug\net6.0\CrmBl.dll
+C:\V\CS\crm\CrmModelShop\CrmBl\bin\Debug\net6.0\CrmBl.pdb
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.csproj.AssemblyReference.cache
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.GeneratedMSBuildEditorConfig.editorconfig
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.AssemblyInfoInputs.cache
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.AssemblyInfo.cs
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.csproj.CoreCompileInputs.cache
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.dll
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\refint\CrmBl.dll
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.pdb
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\CrmBl.genruntimeconfig.cache
+C:\V\CS\crm\CrmModelShop\CrmBl\obj\Debug\net6.0\ref\CrmBl.dll
