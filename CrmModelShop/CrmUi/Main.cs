@@ -16,7 +16,7 @@ namespace CrmUi
         {
             var catalogProduct = new Catalog();
 
-            catalogProduct.LoadData(db.Products);
+            catalogProduct.LoadData<Product>(db);
             catalogProduct.Show();
         }
 
@@ -24,7 +24,7 @@ namespace CrmUi
         {
             var catalogSeller = new Catalog();
 
-            catalogSeller.LoadData(db.Sellers);
+            catalogSeller.LoadData<Seller>(db);
             catalogSeller.Show();
         }
 
@@ -32,7 +32,7 @@ namespace CrmUi
         {
             var catalogCustomer = new Catalog();
 
-            catalogCustomer.LoadData(db.Customers);
+            catalogCustomer.LoadData<Customer>(db);
             catalogCustomer.Show();
         }
 
@@ -40,7 +40,7 @@ namespace CrmUi
         {
             var catalogCheck = new Catalog();
 
-            catalogCheck.LoadData(db.Checks);
+            catalogCheck.LoadData<Check>(db);
             catalogCheck.Show();
         }
 
