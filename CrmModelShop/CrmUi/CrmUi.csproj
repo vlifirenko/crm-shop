@@ -24,4 +24,8 @@
     <ProjectReference Include="..\CrmBl\CrmBl.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="SellerForm.cs" />
+  </ItemGroup>
+
 </Project>

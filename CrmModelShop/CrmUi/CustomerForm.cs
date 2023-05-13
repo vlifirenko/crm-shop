@@ -13,7 +13,7 @@ namespace CrmUi
 {
     public partial class CustomerForm : Form
     {
-        public Customer Customer { get;set; }
+        public Customer Customer { get; set; }
 
         public CustomerForm()
         {
