@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrmBl.Migrations
 {
-    [DbContext(typeof(CrmContex))]
+    [DbContext(typeof(CrmContext))]
     [Migration("20230512092213_InitialCreate")]
     partial class InitialCreate
     {

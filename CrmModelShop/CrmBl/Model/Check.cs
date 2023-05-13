@@ -1,6 +1,6 @@
 ﻿namespace CrmBl.Model
 {
-    class Check
+    public class Check
     {
         public int CheckId { get; set; }
         public int CustomerId { get; set; }

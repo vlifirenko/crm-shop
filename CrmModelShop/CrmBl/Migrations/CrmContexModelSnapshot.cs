@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CrmBl.Migrations
 {
-    [DbContext(typeof(CrmContex))]
+    [DbContext(typeof(CrmContext))]
     partial class CrmContexModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrmBl", "CrmBl\CrmBl.csproj", "{466B1FA0-515F-45F4-94E6-0D50ED611BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmBlTests", "CrmBlTests\CrmBlTests.csproj", "{BEBF1A2D-392D-49A6-8974-126B91F97C91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrmBlTests", "CrmBlTests\CrmBlTests.csproj", "{BEBF1A2D-392D-49A6-8974-126B91F97C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmUi", "CrmUi\CrmUi.csproj", "{AB36A367-6980-49CE-AF40-1686161B15C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BEBF1A2D-392D-49A6-8974-126B91F97C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEBF1A2D-392D-49A6-8974-126B91F97C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEBF1A2D-392D-49A6-8974-126B91F97C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB36A367-6980-49CE-AF40-1686161B15C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB36A367-6980-49CE-AF40-1686161B15C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB36A367-6980-49CE-AF40-1686161B15C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB36A367-6980-49CE-AF40-1686161B15C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 
 namespace CrmBl.Model
 {
-    class CrmContex : DbContext
+    public class CrmContext : DbContext
     {
         public DbSet<Check> Checks { get; set; } = null!;
         public DbSet<Customer> Customers { get; set; } = null!;
