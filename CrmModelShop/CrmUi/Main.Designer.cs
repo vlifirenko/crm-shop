@@ -68,8 +68,9 @@
             // addToolStripMenuItem
             // 
             addToolStripMenuItem.Name = "addToolStripMenuItem";
-            addToolStripMenuItem.Size = new Size(120, 26);
+            addToolStripMenuItem.Size = new Size(224, 26);
             addToolStripMenuItem.Text = "Add";
+            addToolStripMenuItem.Click += addToolStripMenuItem_Click;
             // 
             // sellerToolStripMenuItem
             // 
@@ -82,7 +83,7 @@
             // addToolStripMenuItem1
             // 
             addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            addToolStripMenuItem1.Size = new Size(224, 26);
+            addToolStripMenuItem1.Size = new Size(120, 26);
             addToolStripMenuItem1.Text = "Add";
             addToolStripMenuItem1.Click += SellerAddToolStripMenuItem_Click;
             // 
@@ -97,7 +98,7 @@
             // addToolStripMenuItem2
             // 
             addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            addToolStripMenuItem2.Size = new Size(224, 26);
+            addToolStripMenuItem2.Size = new Size(120, 26);
             addToolStripMenuItem2.Text = "Add";
             addToolStripMenuItem2.Click += CustomerAddToolStripMenuItem_Click;
             // 
