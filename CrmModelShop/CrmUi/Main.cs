@@ -14,25 +14,33 @@ namespace CrmUi
 
         private void ProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogProduct = new Catalog<Product>(db.Products);
+            var catalogProduct = new Catalog();
+
+            catalogProduct.LoadData(db.Products);
             catalogProduct.Show();
         }
 
         private void SellerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogSeller = new Catalog<Seller>(db.Sellers);
+            var catalogSeller = new Catalog();
+
+            catalogSeller.LoadData(db.Sellers);
             catalogSeller.Show();
         }
 
         private void CustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCustomer = new Catalog<Customer>(db.Customers);
+            var catalogCustomer = new Catalog();
+
+            catalogCustomer.LoadData(db.Customers);
             catalogCustomer.Show();
         }
 
         private void CheckToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCheck = new Catalog<Check>(db.Checks);
+            var catalogCheck = new Catalog();
+
+            catalogCheck.LoadData(db.Checks);
             catalogCheck.Show();
         }
 

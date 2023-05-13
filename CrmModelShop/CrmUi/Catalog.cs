@@ -3,13 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CrmUi
 {
-    public partial class Catalog<T> : Form where T : class
+    public partial class Catalog : Form
     {
-        private DbSet<Product> products;
-
-        public Catalog(DbSet<T> set)
+        public Catalog()
         {
             InitializeComponent();
+        }
+
+        public void LoadData<T>(DbSet<T> set) where T : class
+        {
             dataGridView.DataSource = set.Local.ToBindingList();
         }
 

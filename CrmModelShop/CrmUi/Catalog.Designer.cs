@@ -1,6 +1,6 @@
 ﻿namespace CrmUi
 {
-    partial class Catalog<T>
+    partial class Catalog
     {
         /// <summary>
         /// Required designer variable.
