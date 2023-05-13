@@ -69,7 +69,7 @@
             buttonEdit.TabIndex = 2;
             buttonEdit.Text = "Edit";
             buttonEdit.UseVisualStyleBackColor = true;
-            buttonEdit.Click += buttonEdit_Click;
+            buttonEdit.Click += ButtonEdit_Click;
             // 
             // buttonDelete
             // 
@@ -79,6 +79,7 @@
             buttonDelete.TabIndex = 3;
             buttonDelete.Text = "Delete";
             buttonDelete.UseVisualStyleBackColor = true;
+            buttonDelete.Click += ButtonDelete_Click;
             // 
             // Catalog
             // 

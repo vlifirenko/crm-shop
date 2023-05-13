@@ -117,6 +117,7 @@
             Controls.Add(textName);
             Name = "ProductForm";
             Text = "ProductForm";
+            Load += ProductForm_Load;
             ((System.ComponentModel.ISupportInitialize)numericPrice).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericCount).EndInit();
             ResumeLayout(false);
