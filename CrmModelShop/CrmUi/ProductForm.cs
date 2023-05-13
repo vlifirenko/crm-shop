@@ -24,7 +24,9 @@ namespace CrmUi
         {
             Product = new Product
             {
-                Name = textBox1.Text
+                Name = textName.Text,
+                Price = numericPrice.Value,
+                Count = Convert.ToInt32(numericCount.Value)
             };
 
             Close();
