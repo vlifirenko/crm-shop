@@ -1,6 +1,5 @@
 ﻿using CrmBl.Model;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
 
 namespace CrmUi
 {
@@ -8,7 +7,6 @@ namespace CrmUi
     {
         private Type _dataType;
         private CrmContext _db;
-        private DbSet<Product> _productSet;
 
         public Catalog()
         {
@@ -19,21 +17,43 @@ namespace CrmUi
         {
             _dataType = typeof(T);
             _db = db;
-            if (_dataType == typeof(Product))
-                _productSet = db.Set<Product>();
 
-            _productSet.Load();
-            dataGridView.DataSource = _productSet.Local.ToBindingList();
+            if (_dataType == typeof(Product))
+            {
+                var productSet = db.Set<Product>();
+                productSet.Load();
+                dataGridView.DataSource = productSet.Local.ToBindingList();
+            }
+            else if (_dataType == typeof(Customer))
+            {
+                var customerSet = db.Set<Customer>();
+                customerSet.Load();
+                dataGridView.DataSource = customerSet.Local.ToBindingList();
+            }
+            else if (_dataType == typeof(Seller))
+            {
+                var sellerSet = db.Set<Seller>();
+                sellerSet.Load();
+                dataGridView.DataSource = sellerSet.Local.ToBindingList();
+            }
         }
 
         private void Catalog_Load(object sender, EventArgs e)
         {
-
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (_dataType == typeof(Product))
+            {
+                var form = new ProductForm();
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    _db.Products.Add(form.Product);
+                    _db.SaveChanges();
+                }
+            }
+            else if (_dataType == typeof(Seller))
             {
                 var form = new SellerForm();
                 if (form.ShowDialog() == DialogResult.OK)
@@ -42,11 +62,14 @@ namespace CrmUi
                     _db.SaveChanges();
                 }
             }
-            else if (_dataType == typeof(Seller))
-            {
-            }
             else if (_dataType == typeof(Customer))
             {
+                var form = new CustomerForm();
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    _db.Customers.Add(form.Customer);
+                    _db.SaveChanges();
+                }
             }
         }
 
@@ -56,12 +79,12 @@ namespace CrmUi
 
             if (_dataType == typeof(Product))
             {
-                var product = _productSet.Find(id);
+                var productSet = _db.Set<Product>();
+                var product = productSet.Find(id);
                 if (product == null)
                     throw new Exception("product is null");
 
                 var form = new ProductForm(product);
-
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     _db.Products.Update(form.Product);
