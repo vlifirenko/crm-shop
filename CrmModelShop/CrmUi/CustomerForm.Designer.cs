@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            textName = new TextBox();
             label1 = new Label();
             button1 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textName
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(102, 6);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 27);
-            textBox1.TabIndex = 0;
+            textName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textName.Location = new Point(102, 6);
+            textName.Name = "textName";
+            textName.Size = new Size(229, 27);
+            textName.TabIndex = 0;
             // 
             // label1
             // 
@@ -69,7 +69,7 @@
             ClientSize = new Size(338, 256);
             Controls.Add(button1);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textName);
             Name = "CustomerForm";
             Text = "CustomerForm";
             Load += CustomerForm_Load;
@@ -79,7 +79,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textName;
         private Label label1;
         private Button button1;
     }

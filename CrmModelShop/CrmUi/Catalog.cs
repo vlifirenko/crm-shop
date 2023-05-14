@@ -87,8 +87,39 @@ namespace CrmUi
                 var form = new ProductForm(product);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    _db.Products.Update(form.Product);
+                    product = form.Product;
                     _db.SaveChanges();
+                    dataGridView.Update();
+                }
+            }
+            else if (_dataType == typeof(Seller))
+            {
+                var sellerSet = _db.Set<Seller>();
+                var seller = sellerSet.Find(id);
+                if (seller == null)
+                    throw new Exception("seller is null");
+
+                var form = new SellerForm(seller);
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    seller = form.Seller;
+                    _db.SaveChanges();
+                    dataGridView.Update();
+                }
+            }
+            else if (_dataType == typeof(Customer))
+            {
+                var customerSet = _db.Set<Customer>();
+                var customer = customerSet.Find(id);
+                if (customer == null)
+                    throw new Exception("customer is null");
+
+                var form = new CustomerForm(customer);
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    customer = form.Customer;
+                    _db.SaveChanges();
+                    dataGridView.Update();
                 }
             }
         }

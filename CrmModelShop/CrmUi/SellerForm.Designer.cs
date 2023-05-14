@@ -30,7 +30,7 @@
         {
             button1 = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
+            textName = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -54,13 +54,13 @@
             label1.TabIndex = 4;
             label1.Text = "Input name";
             // 
-            // textBox1
+            // textName
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(102, 6);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(310, 27);
-            textBox1.TabIndex = 3;
+            textName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textName.Location = new Point(102, 6);
+            textName.Name = "textName";
+            textName.Size = new Size(310, 27);
+            textName.TabIndex = 3;
             // 
             // SellerForm
             // 
@@ -69,7 +69,7 @@
             ClientSize = new Size(424, 295);
             Controls.Add(button1);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textName);
             Name = "SellerForm";
             Text = "SellerForm";
             ResumeLayout(false);
@@ -80,6 +80,6 @@
 
         private Button button1;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox textName;
     }
 }

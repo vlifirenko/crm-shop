@@ -89,6 +89,7 @@
             // numericCount
             // 
             numericCount.Location = new Point(105, 84);
+            numericCount.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numericCount.Name = "numericCount";
             numericCount.Size = new Size(310, 27);
             numericCount.TabIndex = 11;

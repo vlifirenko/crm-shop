@@ -1,4 +1,5 @@
 ﻿using CrmBl.Model;
+using System.Diagnostics;
 
 namespace CrmUi
 {
@@ -25,12 +26,11 @@ namespace CrmUi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Product = new Product
-            {
-                Name = textName.Text,
-                Price = numericPrice.Value,
-                Count = Convert.ToInt32(numericCount.Value)
-            };
+            var product = Product ?? new Product();
+
+            product.Name = textName.Text;
+            product.Price = numericPrice.Value;
+            product.Count = Convert.ToInt32(numericCount.Value);
 
             Close();
         }
